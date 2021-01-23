@@ -2,38 +2,38 @@
   .main__grid {
 
     display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas: 'balls_container_L main__logo balls_container_R';
+    grid-template-rows: 60px 40px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'main__logo'
+                         'balls_container_R';
 }
 
 .main__logo {
     grid-area: main__logo;
-    margin-left: 30%;
   }
+
+.center_image {
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .balls_container_L {
     grid-area:  balls_container_L;
     position: relative;
-    margin-left: 100%;
-    margin-top: -8%;
 }
 
 .balls_container_R {
     grid-area: balls_container_R;
     position: relative;
+    margin-left: 143px;
 }
 
 
 // Ball Styling
-
-   .rotate {
-        // -webkit-transform: rotate(90deg);
-        // -moz-transform: rotate(90deg);
-        // -o-transform: rotate(90deg);
-        // -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-   }
+  .rotate {
+    transform: rotate(90deg);
+  }
 
   .container{
     width: 200px;
@@ -41,13 +41,15 @@
     margin: 0 auto;
     display: inline-block;
   }
-  .ball{
-    width: 10px;
-    height: 10px;
-    margin: 10px auto;
+
+  .ball {
+    width: 5px;
+    height:5px;
+    margin:5px auto;
     border-radius: 50%;
-    background: #fff;
+    background: rgb(255, 214, 80);
   }
+  
   .ball:nth-child(1){
     animation: right 1s infinite ease-in-out;
   }
@@ -69,26 +71,60 @@
   .ball:nth-child(7){
     animation: right 1s infinite ease-in-out;
   }
+  .ball:nth-child(8){
+    animation: right 1.1s infinite ease-in-out;
+  }
+  .ball:nth-child(9){
+    animation: right 1.05s infinite ease-in-out;
+  }
+  .ball:nth-child(10){
+    animation: right 1s infinite ease-in-out;
+  }
+  .ball:nth-child(11){
+    animation: right 1.1s infinite ease-in-out;
+  }
+  .ball:nth-child(12){
+    animation: right 1.05s infinite ease-in-out;
+  }
+  .ball:nth-child(13){
+    animation: right 1s infinite ease-in-out;
+  }
+  .ball:nth-child(14){
+    animation: right 1.1s infinite ease-in-out;
+  }
+  .ball:nth-child(15){
+    animation: right 1.05s infinite ease-in-out;
+  }
+  .ball:nth-child(16){
+    animation: right 1s infinite ease-in-out;
+  }
+  .ball:nth-child(17){
+    animation: right 1.1s infinite ease-in-out;
+  }
+  .ball:nth-child(18){
+    animation: right 1.05s infinite ease-in-out;
+  }
+
   @keyframes right{
     0%{
-      transform: translate(-15px);
+      transform: translate(-5px);
     }
     50%{
-      transform: translate(15px);
+      transform: translate(5px);
     }
     100%{
-      transform: translate(-15px);
+      transform: translate(-5px);
     }
   }
   @keyframes left{
     0%{
-      transform: translate(15px);
+      transform: translate(5px);
     }
     50%{
-      transform: translate(-15px);
+      transform: translate(-5px);
     }
     100%{
-      transform: translate(15px);
+      transform: translate(5px);
     }
   }
   
